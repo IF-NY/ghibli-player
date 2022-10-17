@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F0ED;
+    width: 100vw;
+    height: 100vh;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 61.458vw;
+    margin: 0 2.083vw;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 헤더 부분 */
+header {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    font-weight: 400;
+    font-size: 2.396vw;
+    font-family: 'Dancing Script', cursive;
+    color: #333333;
+}
+
+/* 애니메이션 리스트 부분 */
+
+.main {
+    text-align: center;
+    margin-top: 2.083vw;
+}
+
+.ani-list {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0.833vw;
+}
+
+.ani {
+    width: 5.625vw;
+    height: 25.417vw;
+    background-color: #cfcdc2;
+    transition: all 0.3s ease-in-out 0s;
+    transform-origin: center center;
+    transform: scale(0);
+}
+
+.ani:hover {
+    width: 11.354vw;
+}
+
+.ani1 {
+    background-image: url(../images/ani1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: grayscale(100%); */
+}
+
+.ani1:hover {
+    background-image: url(../images/ani1.gif);
+    background-position: 45% center;
+    /* filter: grayscale(0%); */
+}
+
+.ani2 {
+    margin-top: 1.146vw;
+    background-image: url(../images/ani2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani2:hover {
+    background-image: url(../images/ani2.gif);
+    background-position: 48% center;
+    /* filter: opacity(90%); */
+}
+
+.ani3 {
+    margin-top: 2.188vw;
+    background-image: url(https://i.pinimg.com/originals/26/37/4c/26374c55c7a98415f5220bd3f199c277.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(60%);
+}
+
+.ani3:hover {
+    background-image: url(../images/ani3.gif);
+    background-position: 40% center;
+    /* filter: opacity(85%); */
+    filter: opacity(100%);
+}
+
+.ani4 {
+    margin-top: 1.146vw;
+    background-image: url(../images/ani4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani4:hover {
+    background-image: url(../images/ani4.gif);
+    /* filter: opacity(85%); */
+}
+
+.ani5 {
+    background-image: url(../images/ani5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani5:hover {
+    background-image: url(../images/ani5.gif);
+    /* filter: opacity(85%); */
+}
+
+.ani6 {
+    margin-top: 2.188vw;
+    background-image: url(../images/ani6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani6:hover {
+    background-image: url(../images/ani6_2.gif);
+    background-position: 60% center;
+    /* filter: opacity(85%); */
+}
+
+.ani7 {
+    margin-top: 1.146vw;
+    background-image: url(../images/ani7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani7:hover {
+    background-image: url(../images/ani7.gif);
+}
+
+.ani8 {
+    background-image: url(../images/ani8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani8:hover {
+    background-image: url(../images/ani8.gif);
+    background-position: 74% center;
+}
+
+.ani9 {
+    margin-top: 2.188vw;
+    background-image: url(../images/ani9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani9:hover {
+    background-image: url(../images/ani9_1.gif);
+    /* background-position: 53% center; */
+}
+
+.ani10 {
+    background-image: url(../images/ani10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ani10:hover {
+    background-image: url(../images/ani10.gif);
+    background-position: 60% center;
+}
+
+.ani-info {
+    margin-top: 4vh;
+    text-align: center;
+    display: none;
+}
+
+.ani-info h1 {
+    font-weight: 700;
+    font-size: 3.750vw;
+    color: #333333;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.ani-info p {
+    color: #9B9B9B;
+    font-size: 0.833vw;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    margin-top: 0.208vw;
+}
+
+/* 푸터 부분 */
+
+footer {
+    height: 4.167vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.625vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: #9B9B9B;
+}
+
+footer p span {
+    color: #333333;
+    font-weight: 700;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 2.083vw;
+}
+
+.sns {
+    display: flex;
+    gap: 0.625vw;
+    color: #333333;
+}

@@ -1,0 +1,1764 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    font-size: 4px;
+    min-width: 103em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.black{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 300;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 60;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 헤더 부분 */
+header {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 61;
+    opacity: 0;
+}
+
+header a {
+    font-weight: 400;
+    font-size: 2.396vw;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 푸터 부분 */
+
+footer {
+    width: 100%;
+    height: 4.167vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.625vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin-top: auto;
+    z-index: 10;
+    padding: 0 2.083vw;
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: rgba(225, 225, 225, 0.8);
+}
+
+footer p span {
+    color: #fff;
+    font-weight: 700;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 2.083vw;
+}
+
+.sns {
+    display: flex;
+    gap: 0.625vw;
+    color: #fff;
+}
+
+.background {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/G3vXzLd0/karigurashi018.jpg');
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.35;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow-container {
+    width: 100%;
+    z-index: 61;
+    margin-top: calc(50vh - 38px);
+    opacity: 0;
+}
+
+.arrows {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3%;
+}
+
+.arrows div {
+    cursor: pointer;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 60;
+}
+
+.ariety {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+.waterd {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#waterd1 {
+    background-image: url('https://i.postimg.cc/28jDL68m/1-3x.png');
+    opacity: 0.3;
+}
+
+#waterd2 {
+    background-image: url('https://i.postimg.cc/HnpfMZm3/2-3x.png');
+    opacity: 0.3;
+}
+
+#waterd3 {
+    background-image: url('https://i.postimg.cc/nr0NG4cx/4-3x.png');
+    opacity: 0.3;
+}
+
+#waterd4 {
+    background-image: url('https://i.postimg.cc/MZ5kwS0L/3-3x.png');
+    opacity: 0.3;
+}
+
+#ariety-hover1 {
+    width: 16vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 28;
+    top: 2.5vw;
+    left: 12vw;
+}
+
+#ariety-hover2 {
+    width: 15vw;
+    height: 5vw;
+    position: absolute;
+    z-index: 28;
+    top: 39vw;
+    left: 13vw;
+}
+
+#ariety-hover3 {
+    width: 20vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 28;
+    top: 29vw;
+    left: 63vw;
+}
+
+#ariety-hover4 {
+    width: 19vw;
+    height: 8vw;
+    position: absolute;
+    z-index: 28;
+    top: 7vw;
+    left: 66vw;
+}
+
+#ariety-line {
+    position: absolute;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/MK0zbvWf/List.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+}
+
+#ariety-img {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/3R6cP5TD/List-1.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.5;
+
+}
+
+.align {
+    position: absolute;
+    z-index: 29;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+}
+
+.left-align {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-align {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.align h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.align p {
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#a-fst-list {
+    position: absolute;
+    z-index: 27;
+    top: 4vw;
+    left: 18.5vw;
+    opacity: 0.4;
+}
+
+#a-snd-list {
+    position: absolute;
+    z-index: 27;
+    top: 40vw;
+    left: 14.5vw;
+    opacity: 0.4;
+}
+
+#a-thrd-list {
+    position: absolute;
+    z-index: 27;
+    top: 31vw;
+    left: 68vw;
+    opacity: 0.4;
+}
+
+#a-fth-list {
+    position: absolute;
+    z-index: 27;
+    top: 10vw;
+    left: 68vw;
+    opacity: 0.4;
+}
+
+/* /////아리에티 1번 리스트 */
+#ariety-hover1:hover~#waterd1 {
+    opacity: 1;
+}
+
+#ariety-hover1:hover~#a-fst-list {
+    opacity: 1;
+}
+
+/* ///////아리에티 2번 리스트//// */
+
+#ariety-hover2:hover~#waterd2 {
+    opacity: 1;
+}
+
+#ariety-hover2:hover~#a-snd-list {
+    opacity: 1;
+}
+
+/* ///아리에티  3번 리스트////// */
+#ariety-hover3:hover~#waterd3 {
+    opacity: 1;
+}
+
+#ariety-hover3:hover~#a-thrd-list {
+    opacity: 1;
+}
+
+/* ///아리에티 4번 리스트///// */
+
+#ariety-hover4:hover~#waterd4 {
+    opacity: 1;
+}
+
+#ariety-hover4:hover~#a-fth-list {
+    opacity: 1;
+}
+
+.a-align {
+    opacity: 0.4;
+}
+
+.hime {
+    width: 100%;
+    height: 100%;
+    display: none;
+    transform-origin: top center;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#hime-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/0yTr781y/List-2.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.stone {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#stone1 {
+    background-image: url('https://i.postimg.cc/VLB2wgDs/1-3x.png');
+    opacity: 0.2;
+}
+
+#stone2 {
+    background-image: url('https://i.postimg.cc/bvHZHKTc/2-3x.png');
+    opacity: 0.2;
+}
+
+#stone3 {
+    background-image: url('https://i.postimg.cc/xCfcstxk/3-3x.png');
+    opacity: 0.2;
+}
+
+.s-align {
+    opacity: 0.4;
+}
+
+#s-fst-list {
+    position: absolute;
+    z-index: 27;
+    top: 33vw;
+    left: 21vw;
+    opacity: 0.4;
+}
+
+#s-snd-list {
+    position: absolute;
+    z-index: 27;
+    top: 36vw;
+    left: 61.4vw;
+    opacity: 0.4;
+}
+
+#s-thrd-list {
+    position: absolute;
+    z-index: 27;
+    top: 17vw;
+    left: 62vw;
+    opacity: 0.4;
+}
+
+#hime-hover1 {
+    width: 18vw;
+    height: 12vw;
+    position: absolute;
+    z-index: 28;
+    top: 29vw;
+    left: 20vw;
+}
+
+#hime-hover2 {
+    width: 18vw;
+    height: 14vw;
+    position: absolute;
+    z-index: 28;
+    top: 31vw;
+    left: 55vw;
+}
+
+#hime-hover3 {
+    width: 13vw;
+    height: 11vw;
+    position: absolute;
+    z-index: 28;
+    top: 12vw;
+    left: 55vw;
+}
+
+/* /////히메 1번 리스트 */
+#hime-hover1:hover~#stone1 {
+    opacity: 1;
+}
+
+#hime-hover1:hover~#s-fst-list {
+    opacity: 1;
+}
+
+/* /////히메 2번 리스트 */
+#hime-hover2:hover~#stone2 {
+    opacity: 1;
+}
+
+#hime-hover2:hover~#s-snd-list {
+    opacity: 1;
+}
+
+/* /////히메 3번 리스트 */
+#hime-hover3:hover~#stone3 {
+    opacity: 1;
+}
+
+#hime-hover3:hover~#s-thrd-list {
+    opacity: 1;
+}
+
+
+
+/* 토토로 */
+
+
+.totoro {
+    width: 100%;
+    height: 100%;
+    display: none;
+    transform-origin: top center;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#totoro-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/jjMJ2Twj/List-5.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.mini {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#mini1 {
+    background-image: url('https://i.postimg.cc/vT9XFTPj/List-3.png');
+    opacity: 0.3;
+}
+
+#mini2 {
+    background-image: url('https://i.postimg.cc/xCW8N109/List-3.png');
+    opacity: 0.3;
+}
+
+#mini3 {
+    background-image: url('https://i.postimg.cc/nVQ3QSHk/List-1.png');
+    opacity: 0.3;
+}
+
+#mini4 {
+    background-image: url('https://i.postimg.cc/tRwWF9rZ/List-3.png');
+    opacity: 0.3;
+}
+
+.t-align {
+    opacity: 0.4;
+}
+
+#t-fst-list {
+    position: absolute;
+    z-index: 27;
+    top: 12vw;
+    left: 14.5vw;
+    opacity: 0.4;
+}
+
+#t-snd-list {
+    position: absolute;
+    z-index: 27;
+    top: 38vw;
+    left: 9vw;
+    opacity: 0.4;
+}
+
+#t-thrd-list {
+    position: absolute;
+    z-index: 27;
+    top: 16vw;
+    left: 50vw;
+    opacity: 0.4;
+}
+
+#t-fth-list {
+    position: absolute;
+    z-index: 27;
+    top: 40vw;
+    left: 79vw;
+    opacity: 0.4;
+}
+
+#totoro-hover1 {
+    width: 13vw;
+    height: 7vw;
+    position: absolute;
+    z-index: 28;
+    top: 10vw;
+    left: 7vw;
+}
+
+#totoro-hover2 {
+    width: 16vw;
+    height: 8vw;
+    position: absolute;
+    z-index: 28;
+    top: 36vw;
+    left: 8vw;
+}
+
+#totoro-hover3 {
+    width: 14vw;
+    height: 7vw;
+    position: absolute;
+    z-index: 28;
+    top: 14.5vw;
+    left: 44vw;
+}
+
+#totoro-hover4 {
+    width: 14vw;
+    height: 8.5vw;
+    position: absolute;
+    z-index: 28;
+    top: 36vw;
+    left: 78vw;
+}
+
+/* /////토토로 1번 리스트 */
+#totoro-hover1:hover~#mini1 {
+    opacity: 1;
+}
+
+#totoro-hover1:hover~#t-fst-list {
+    opacity: 1;
+}
+
+/* /////토토로 2번 리스트 */
+#totoro-hover2:hover~#mini2 {
+    opacity: 1;
+}
+
+#totoro-hover2:hover~#t-snd-list {
+    opacity: 1;
+}
+
+/* /////토토로 3번 리스트 */
+#totoro-hover3:hover~#mini3 {
+    opacity: 1;
+}
+
+#totoro-hove3:hover~#t-thrd-list {
+    opacity: 1;
+}
+
+/* /////토토로 4번 리스트 */
+#totoro-hover4:hover ~ #mini4 {
+    opacity: 1;
+}
+
+#totoro-hover4:hover ~ #t-fth-list {
+    opacity: 1;
+}
+
+
+/* 하울 */
+
+.haul {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+#haul-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/15VD4N9n/List-7.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.feather {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#feather1 {
+    background-image: url('https://i.postimg.cc/SRZ05NTC/List-8.png');
+    opacity: 0.3;
+}
+
+#feather2 {
+    background-image: url('https://i.postimg.cc/nVTtM0Fr/List-9.png');
+    opacity: 0.3;
+}
+
+#feather3 {
+    background-image: url('https://i.postimg.cc/Gh2nDGtQ/List-10.png');
+    opacity: 0.3;
+}
+
+#feather4 {
+    background-image: url('https://i.postimg.cc/tCMQNJVH/List-11.png');
+    opacity: 0.3;
+}
+
+.t-align {
+    opacity: 1;
+}
+
+#h-fst-list {
+    position: absolute;
+    z-index: 27;
+    top: 14vw;
+    left: 14vw;
+    opacity: 0.4;
+}
+
+#h-snd-list {
+    position: absolute;
+    z-index: 27;
+    top: 42vw;
+    left: 23vw;
+    opacity: 0.4;
+}
+
+#h-thrd-list {
+    position: absolute;
+    z-index: 27;
+    top: 35vw;
+    left: 78vw;
+    opacity: 0.4;
+}
+
+#h-fth-list {
+    position: absolute;
+    z-index: 27;
+    top: 15vw;
+    left: 70vw;
+    opacity: 0.4;
+}
+
+#haul-hover1 {
+    width: 16vw;
+    height: 8vw;
+    position: absolute;
+    z-index: 28;
+    top: 9.5vw;
+    left: 6vw;
+}
+
+#haul-hover2 {
+    width: 15vw;
+    height: 7.5vw;
+    position: absolute;
+    z-index: 28;
+    top: 41vw;
+    left: 22vw;
+}
+
+#haul-hover3 {
+    width: 15vw;
+    height: 7vw;
+    position: absolute;
+    z-index: 28;
+    top: 31.5vw;
+    left: 73vw;
+}
+
+#haul-hover4 {
+    width: 16vw;
+    height: 9vw;
+    position: absolute;
+    z-index: 28;
+    top: 10vw;
+    left: 69vw;
+}
+
+/* 하울 1번 리스트 */
+
+#haul-hover1:hover~#feather1 {
+    opacity: 1;
+}
+
+#haul-hover1:hover~#h-fst-list {
+    opacity: 1;
+}
+
+/* 하울 2번 리스트 */
+
+#haul-hover2:hover~#feather2 {
+    opacity: 1;
+}
+
+#haul-hover2:hover~#h-snd-list {
+    opacity: 1;
+}
+
+/* 하울 3번 리스트 */
+
+#haul-hover3:hover~#feather3 {
+    opacity: 1;
+}
+
+#haul-hover3:hover~#h-thrd-list {
+    opacity: 1;
+}
+
+/* 하울 4번 리스트 */
+
+#haul-hover4:hover~#feather4 {
+    opacity: 1;
+}
+
+#haul-hover4:hover~#h-fth-list {
+    opacity: 1;
+}
+
+
+/* 키키 */
+
+.kiki {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+#kiki-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/13FF9gGm/List-12.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.bird {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#bird1 {
+    background-image: url('https://i.postimg.cc/VkFCSxVp/bird1-1-25x.png');
+    opacity: 0.3;
+}
+
+#bird2 {
+    background-image: url('https://i.postimg.cc/pdXnK0NT/bird2-1-25x.png');
+    opacity: 0.3;
+}
+
+#bird3 {
+    background-image: url('https://i.postimg.cc/tC31w0pJ/bird3-1-25x.png');
+    opacity: 0.3;
+}
+
+.k-align {
+    position: absolute;
+    z-index: 27;
+    opacity: 1;
+}
+
+#k-fst-list {
+    top: 26vw;
+    left: 10vw;
+    opacity: 0.4;
+}
+
+#k-snd-list {
+    top: 13vw;
+    left: 47vw;
+    opacity: 0.4;
+}
+
+#k-thrd-list {
+    top: 27vw;
+    left: 66vw;
+    opacity: 0.4;
+}
+
+
+#kiki-hover1 {
+    width: 13vw;
+    height: 10vw;
+    position: absolute;
+    z-index: 28;
+    top: 26vw;
+    left: 9vw;
+}
+
+#kiki-hover2 {
+    width: 17vw;
+    height: 10vw;
+    position: absolute;
+    z-index: 28;
+    top: 6vw;
+    left: 38vw;
+}
+
+#kiki-hover3 {
+    width: 32vw;
+    height: 42vw;
+    position: absolute;
+    z-index: 28;
+    top: 5vw;
+    left: 65vw;
+}
+
+/* 키키 1번 리스트 */
+
+#kiki-hover1:hover~#bird1 {
+    opacity: 1;
+}
+
+#kiki-hover1:hover~#k-fst-list {
+    opacity: 1;
+}
+
+/* 키키 2번 리스트 */
+
+#kiki-hover2:hover~#bird2 {
+    opacity: 1;
+}
+
+#kiki-hover2:hover~#k-snd-list {
+    opacity: 1;
+}
+
+/* 키키 3번 리스트 */
+
+#kiki-hover3:hover~#bird3 {
+    opacity: 1;
+}
+
+#kiki-hover3:hover~#k-thrd-list {
+    opacity: 1;
+}
+
+
+
+/* 센과 치히로 */
+
+.sen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+#sen-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/nrk1HXBS/List-14.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.dust {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#dust1 {
+    background-image: url('https://i.postimg.cc/ZqdFW76d/dust1-1-25x.png');
+    opacity: 0.3;
+}
+
+#dust2 {
+    background-image: url('https://i.postimg.cc/XJ6KdfgD/dust2-1-25x.png');
+    opacity: 0.3;
+}
+
+#dust3 {
+    background-image: url('https://i.postimg.cc/tTdcxCFW/dust3-1-25x.png');
+    opacity: 0.3;
+}
+
+#dust4 {
+    background-image: url('https://i.postimg.cc/1zmJfhyY/dust4-1-25x.png');
+    opacity: 0.2;
+}
+
+.sen-align {
+    position: absolute;
+    z-index: 27;
+    opacity: 1;
+}
+
+#sen-fst-list {
+    top: 10vw;
+    left: 19.5vw;
+    opacity: 0.4;
+}
+
+#sen-snd-list {
+    top: 30vw;
+    left: 17vw;
+    opacity: 0.4;
+}
+
+#sen-thrd-list {
+    top: 28vw;
+    left: 72vw;
+    opacity: 0.4;
+}
+
+#sen-fth-list {
+    top: 18vw;
+    left: 68vw;
+    opacity: 0.4;
+}
+
+
+#sen-hover1 {
+    width: 18vw;
+    height: 10vw;
+    position: absolute;
+    z-index: 28;
+    top: 4vw;
+    left: 10vw;
+}
+
+#sen-hover2 {
+    width: 21vw;
+    height: 18vw;
+    position: absolute;
+    z-index: 28;
+    top: 24vw;
+    left: 15vw;
+}
+
+#sen-hover3 {
+    width: 26vw;
+    height: 16vw;
+    position: absolute;
+    z-index: 28;
+    top: 24vw;
+    left: 54vw;
+}
+
+#sen-hover4 {
+    width: 22vw;
+    height: 16vw;
+    position: absolute;
+    z-index: 28;
+    top: 8vw;
+    left: 67vw;
+}
+
+/* 센과치히로 1번 리스트 */
+
+#sen-hover1:hover~#dust1 {
+    opacity: 1;
+}
+
+#sen-hover1:hover~#sen-fst-list {
+    opacity: 1;
+}
+
+/* 센과치히로 2번 리스트 */
+
+#sen-hover2:hover~#dust2 {
+    opacity: 1;
+}
+
+#sen-hover2:hover~#sen-snd-list {
+    opacity: 1;
+}
+
+/* 센과치히로 3번 리스트 */
+
+#sen-hover3:hover~#dust3 {
+    opacity: 1;
+}
+
+#sen-hover3:hover~#sen-thrd-list {
+    opacity: 1;
+}
+
+/* 센과치히로 4번 리스트 */
+
+#sen-hover4:hover~#dust4 {
+    opacity: 1;
+}
+
+#sen-hover4:hover~#sen-fth-list {
+    opacity: 1;
+}
+
+
+/* 포뇨 */
+
+.phonyo {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+#phonyo-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/yxYdf3Js/List-15.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.sis {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#sis1 {
+    background-image: url('https://i.postimg.cc/26yM2zzg/sis1-1-25x.png');
+    opacity: 0.3;
+}
+
+#sis2 {
+    background-image: url('https://i.postimg.cc/xCZ7ZW88/sis2-1-25x.png');
+    opacity: 0.3;
+}
+
+#sis3 {
+    background-image: url('https://i.postimg.cc/WtLyNgMP/sis3-1-25x.png');
+    opacity: 0.3;
+}
+
+.p-align {
+    position: absolute;
+    z-index: 27;
+    opacity: 1;
+}
+
+#p-fst-list {
+    top: 16vw;
+    left: 10vw;
+    opacity: 0.4;
+}
+
+#p-snd-list {
+    top: 37vw;
+    left: 70vw;
+    opacity: 0.4;
+}
+
+#p-thrd-list {
+    top: 14vw;
+    left: 75vw;
+    opacity: 0.4;
+}
+
+
+#phonyo-hover1 {
+    width: 18vw;
+    height: 8vw;
+    position: absolute;
+    z-index: 28;
+    top: 15vw;
+    left: 0vw;
+}
+
+#phonyo-hover2 {
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+    z-index: 28;
+    top: 26vw;
+    left: 64vw;
+}
+
+#phonyo-hover3 {
+    width: 19vw;
+    height: 13vw;
+    position: absolute;
+    z-index: 28;
+    top: 10vw;
+    left: 74vw;
+}
+
+/* 포뇨 1번 리스트 */
+
+#phonyo-hover1:hover~#sis1 {
+    opacity: 1;
+}
+
+#phonyo-hover1:hover~#p-fst-list {
+    opacity: 1;
+}
+
+/* 포뇨 2번 리스트 */
+
+#phonyo-hover2:hover~#sis2 {
+    opacity: 1;
+}
+
+#phonyo-hover2:hover~#p-snd-list {
+    opacity: 1;
+}
+
+/* 포뇨 3번 리스트 */
+
+#phonyo-hover3:hover~#sis3 {
+    opacity: 1;
+}
+
+#phonyo-hover3:hover~#p-thrd-list {
+    opacity: 1;
+}
+
+
+
+/* 붉은 돼지 */
+
+.redpig {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+#redpig-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/zG7FG6Wf/List-16.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.child {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#child1 {
+    background-image: url('https://i.postimg.cc/mrnJptmC/child1-1-25x.png');
+    opacity: 0.3;
+}
+
+#child2 {
+    background-image: url('https://i.postimg.cc/sxYL2Ks4/child2-1-25x.png');
+    opacity: 0.3;
+}
+
+#child3 {
+    background-image: url('https://i.postimg.cc/vB9cL9Yy/child3-1-25x-3-1-25x.png');
+    opacity: 0.3;
+}
+
+#child4 {
+    background-image: url('https://i.postimg.cc/rsMF1PZG/child4-1-25x-3-1-25x.png');
+    opacity: 0.2;
+}
+
+.r-align {
+    position: absolute;
+    z-index: 27;
+    opacity: 1;
+}
+
+#r-fst-list {
+    top: 15.5vw;
+    left: 20vw;
+    opacity: 0.4;
+}
+
+#r-snd-list {
+    top: 26vw;
+    left: 18vw;
+    opacity: 0.4;
+}
+
+#r-thrd-list {
+    top: 18vw;
+    left: 70vw;
+    opacity: 0.4;
+}
+
+#r-fth-list {
+    top: 33vw;
+    left: 73vw;
+    opacity: 0.4;
+}
+
+
+#redpig-hover1 {
+    width: 18vw;
+    height: 10vw;
+    position: absolute;
+    z-index: 28;
+    top: 10.5vw;
+    left: 19vw;
+}
+
+#redpig-hover2 {
+    width: 16vw;
+    height: 12vw;
+    position: absolute;
+    z-index: 28;
+    top: 22vw;
+    left: 10vw;
+}
+
+#redpig-hover3 {
+    width: 18vw;
+    height: 13vw;
+    position: absolute;
+    z-index: 28;
+    top: 28vw;
+    left: 64vw;
+}
+
+#redpig-hover4 {
+    width: 25vw;
+    height: 11vw;
+    position: absolute;
+    z-index: 28;
+    top: 12.5vw;
+    left: 61vw;
+}
+
+/* 붉은돼지 1번 리스트 */
+
+#redpig-hover1:hover~#child2 {
+    opacity: 1;
+}
+
+#redpig-hover1:hover~#r-fst-list {
+    opacity: 1;
+}
+
+/* 붉은돼지 2번 리스트 */
+
+#redpig-hover2:hover~#child1 {
+    opacity: 1;
+}
+
+#redpig-hover2:hover~#r-snd-list {
+    opacity: 1;
+}
+
+/* 붉은돼지 3번 리스트 */
+
+#redpig-hover4:hover~#child3 {
+    opacity: 1;
+}
+
+#redpig-hover4:hover~#r-thrd-list {
+    opacity: 1;
+}
+
+/* 붉은돼지 4번 리스트 */
+
+#redpig-hover3:hover~#child4 {
+    opacity: 1;
+}
+
+#redpig-hover3:hover~#r-fth-list {
+    opacity: 1;
+}
+
+
+/* 라퓨타 */
+
+.laphuta {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+#laphuta-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/6QvssmBb/List-19.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.dove {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#dove1 {
+    background-image: url('https://i.postimg.cc/cC75xpzT/dove1-1-25x.png');
+    opacity: 0.3;
+}
+
+#dove2 {
+    background-image: url('https://i.postimg.cc/wTHGfBtr/dove2-1-25x.png');
+    opacity: 0.3;
+}
+
+#dove3 {
+    background-image: url('https://i.postimg.cc/nhhwxwGY/dove3-1-25x.png');
+    opacity: 0.3;
+}
+
+#dove4 {
+    background-image: url('https://i.postimg.cc/59GtLZ6j/dove4-1-25x.png');
+    opacity: 0.3;
+}
+
+.la-align {
+    position: absolute;
+    z-index: 27;
+    opacity: 1;
+}
+
+#la-fst-list {
+    top: 16vw;
+    left: 15vw;
+    opacity: 0.4;
+}
+
+#la-snd-list {
+    top: 8vw;
+    left: 34vw;
+    opacity: 0.4;
+}
+
+#la-thrd-list {
+    top: 16vw;
+    left: 79vw;
+    opacity: 0.4;
+}
+
+#la-fth-list {
+    top: 36vw;
+    left: 68vw;
+    opacity: 0.4;
+}
+
+#laphuta-hover1 {
+    width: 18vw;
+    height: 12vw;
+    position: absolute;
+    z-index: 28;
+    top: 8vw;
+    left: 6vw;
+}
+
+#laphuta-hover2 {
+    width: 19vw;
+    height: 10vw;
+    position: absolute;
+    z-index: 28;
+    top: 4vw;
+    left: 33vw;
+}
+
+#laphuta-hover3 {
+    width: 18vw;
+    height: 10vw;
+    position: absolute;
+    z-index: 28;
+    top: 34vw;
+    left: 67vw;
+}
+
+#laphuta-hover4 {
+    width: 22vw;
+    height: 8vw;
+    position: absolute;
+    z-index: 28;
+    top: 11.5vw;
+    left: 69vw;
+}
+
+/*라퓨타  1번 리스트 */
+
+#laphuta-hover1:hover~#dove1 {
+    opacity: 1;
+}
+
+#laphuta-hover1:hover~#la-fst-list {
+    opacity: 1;
+}
+
+/*라퓨타  2번 리스트 */
+
+#laphuta-hover2:hover~#dove2 {
+    opacity: 1;
+}
+
+#laphuta-hover2:hover~#la-snd-list {
+    opacity: 1;
+}
+
+/*라퓨타  3번 리스트 */
+
+#laphuta-hover3:hover~#dove4 {
+    opacity: 1;
+}
+
+#laphuta-hover3:hover~#la-fth-list {
+    opacity: 1;
+}
+
+/*라퓨타  4번 리스트 */
+
+#laphuta-hover4:hover~#dove3 {
+    opacity: 1;
+}
+
+#laphuta-hover4:hover~#la-thrd-list {
+    opacity: 1;
+}
+
+/* 고양이의 보은 */
+
+.favor {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+}
+
+#favor-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 28;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/65KYB5XN/List-20.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.cat {
+    position: absolute;
+    z-index: 27;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#cat1 {
+    background-image: url('https://i.postimg.cc/QxqSCG8K/cat1-1-25x.png');
+    opacity: 0.3;
+}
+
+#cat2 {
+    background-image: url('https://i.postimg.cc/BvjCmjx2/cat2-1-25x.png');
+    opacity: 0.3;
+}
+
+#cat3 {
+    background-image: url('https://i.postimg.cc/WpWQ6yy2/List-21.png');
+    opacity: 0.3;
+}
+
+#cat4 {
+    background-image: url('https://i.postimg.cc/vTsL8XCv/cat4-1-25x.png');
+    opacity: 0.3;
+}
+
+.f-align {
+    position: absolute;
+    z-index: 27;
+    opacity: 0.4;
+}
+
+#f-fst-list {
+    top: 28vw;
+    left: 17vw;
+    opacity: 0.4;
+}
+
+#f-snd-list {
+    top: 24vw;
+    left: 38vw;
+    opacity: 0.4;
+}
+
+#f-thrd-list {
+    top: 9vw;
+    left: 61vw;
+    opacity: 0.4;
+}
+
+#f-fth-list {
+    top: 40vw;
+    left: 68.5vw;
+    opacity: 0.4;
+}
+
+#favor-hover1 {
+    width: 18vw;
+    height: 21vw;
+    position: absolute;
+    z-index: 28;
+    top: 26vw;
+    left: 8vw;
+}
+
+#favor-hover2 {
+    width: 18vw;
+    height: 20vw;
+    position: absolute;
+    z-index: 28;
+    top: 20vw;
+    left: 30vw;
+}
+
+#favor-hover3 {
+    width: 18vw;
+    height: 22vw;
+    position: absolute;
+    z-index: 28;
+    top: 24vw;
+    left: 68vw;
+}
+
+#favor-hover4 {
+    width: 17vw;
+    height: 7vw;
+    position: absolute;
+    z-index: 28;
+    top: 8vw;
+    left: 60vw;
+}
+
+/*보은  1번 리스트 */
+
+#favor-hover1:hover~#cat1 {
+    opacity: 1;
+}
+
+#favor-hover1:hover~#f-fst-list {
+    opacity: 1;
+}
+
+/*보은  2번 리스트 */
+
+#favor-hover2:hover ~ #cat2 {
+    opacity: 1;
+}
+
+#favor-hover2:hover ~ #f-snd-list {
+    opacity: 1;
+}
+
+/*보은  3번 리스트 */
+
+#favor-hover3:hover~#cat4 {
+    opacity: 1;
+}
+
+#favor-hover3:hover~#f-fth-list {
+    opacity: 1;
+}
+
+/*보은  4번 리스트 */
+
+#favor-hover4:hover~#cat3 {
+    opacity: 1;
+}
+
+#favor-hover4:hover~#f-thrd-list {
+    opacity: 1;
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Player</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="css/songlist.css">
+</head>
+
+<body>
+    <div class="black"></div>
+    <div class="arrow-container">
+        <div class="arrows">
+            <div id="prev-arrow"><img src="https://i.postimg.cc/qRbqftPm/Group-26.png" width="76px" /></div>
+            <div id="next-arrow"><img src="https://i.postimg.cc/RFVhb1D6/Group-27.png" width="76px" /></div>
+        </div>
+    </div>
+    <header>
+        <a href="index.html">Ghibli Player</a>
+    </header>
+    <footer>
+        <p>ⓒ 2021. <span>Ghibli Player</span> all rights reserved.</p>
+        <div class="right">
+            <div class="sns">
+                <a src="#">Instagram</a>
+                <a src="#">Facebook</a>
+                <a src="#">Twitter</a>
+            </div>
+            <p>Typecase Korea by Commercial type</p>
+        </div>
+    </footer>
+
+
+    <div class="background">
+
+    </div>
+
+    <div class="contents">
+        <div class="ariety show" background="url(https://i.postimg.cc/G3vXzLd0/karigurashi018.jpg)">
+            <div id="ariety-line"></div>
+            <div id="ariety-hover1" class="song-link" link="arrietty.html?album=0&song=0"></div>
+            <div id="ariety-hover2" class="song-link" link="arrietty.html?album=0&song=1"></div>
+            <div id="ariety-hover3" class="song-link" link="arrietty.html?album=0&song=2"></div>
+            <div id="ariety-hover4" class="song-link" link="arrietty.html?album=0&song=3"></div>
+            <div class="waterd" id="waterd1"></div>
+            <div class="waterd" id="waterd2"></div>
+            <div class="waterd" id="waterd3"></div>
+            <div class="waterd" id="waterd4"></div>
+            <div class="align a-align left-align" id="a-fst-list">
+                <h2>Arrietty's Song</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align a-align right-align" id="a-snd-list">
+                <h2>Our House Below</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align a-align left-align" id="a-thrd-list">
+                <h2>The Secret World of Arriety</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align a-align right-align" id="a-fth-list">
+                <h2>Goodbye My Friend</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div id="ariety-img"></div>
+        </div>
+
+        <div class="hime" background="url(https://www.ghibli.jp/gallery/mononoke023.jpg)">
+            <div id="hime-line"></div>
+            <div id="hime-hover1" class="song-link" link="mononoke.html?album=4&song=0"></div>
+            <div id="hime-hover2" class="song-link" link="mononoke.html?album=4&song=1"></div>
+            <div id="hime-hover3" class="song-link" link="mononoke.html?album=4&song=2"></div>
+            <div class="stone" id="stone1"></div>
+            <div class="stone" id="stone2"></div>
+            <div class="stone" id="stone3"></div>
+            <div class="align s-align right-align" id="s-fst-list">
+                <h2>Princess Mononoke</h2>
+                <p>Hayami Kentarous</p>
+            </div>
+            <div class="align s-align left-align" id="s-snd-list">
+                <h2>Departure to the West</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align s-align left-align" id="s-thrd-list">
+                <h2>Sho song</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+        </div>
+
+        <div class="totoro" background="url(https://www.ghibli.jp/gallery/totoro019.jpg)">
+            <div id="totoro-line"></div>
+            <div id="totoro-hover1" class="song-link" link="totoro.html?album=4&song=0"></div>
+            <div id="totoro-hover2" class="song-link" link="totoro.html?album=4&song=1"></div>
+            <div id="totoro-hover3" class="song-link" link="totoro.html?album=4&song=2"></div>
+            <div id="totoro-hover4" class="song-link" link="totoro.html?album=4&song=3"></div>
+            <div class="mini" id="mini1"></div>
+            <div class="mini" id="mini2"></div>
+            <div class="mini" id="mini3"></div>
+            <div class="mini" id="mini4"></div>
+            <div class="align t-align left-align" id="t-fst-list">
+                <h2>Sampo</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align t-align right-align" id="t-snd-list">
+                <h2>바람이 지나가는 길</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align t-align left-align" id="t-thrd-list">
+                <h2>고양이 버스</h2>
+                <p>Fujikata Aki</p>
+            </div>
+            <div class="align t-align right-align" id="t-fth-list">
+                <h2>이웃집 토토로</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+        </div>
+
+        <div class="haul" background="url(https://i.postimg.cc/v8NWQvdw/List.jpg)">
+            <div id="haul-line"></div>
+            <div id="haul-hover1" class="song-link" link="howl's castle.html?album=4&song=0"></div>
+            <div id="haul-hover2" class="song-link" link="howl's castle.html?album=4&song=1"></div>
+            <div id="haul-hover3" class="song-link" link="howl's castle.html?album=4&song=2"></div>
+            <div id="haul-hover4" class="song-link" link="howl's castle.html?album=4&song=3"></div>
+            <div class="feather" id="feather1"></div>
+            <div class="feather" id="feather2"></div>
+            <div class="feather" id="feather3"></div>
+            <div class="feather" id="feather4"></div>
+            <div class="align h-align left-align" id="h-fst-list">
+                <h2>인생의 회전 목마</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align h-align right-align" id="h-snd-list">
+                <h2>세계의 약속</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align h-align left-align" id="h-thrd-list">
+                <h2>Cave Of Mind</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align h-align right-align" id="h-fth-list">
+                <h2>Sophies Tomorrow</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+        </div>
+
+        <div class="kiki" background="url(https://i.postimg.cc/ncHS9JRf/1-25x.png)">
+            <div id="kiki-line"></div>
+            <div id="kiki-hover1" class="song-link" link="song5.html?album=4&song=0"></div>
+            <div id="kiki-hover2" class="song-link" link="song5.html?album=4&song=1"></div>
+            <div id="kiki-hover3" class="song-link" link="song5.html?album=4&song=2"></div>
+            <div class="obj bird" id="bird1"></div>
+            <div class="obj bird" id="bird2"></div>
+            <div class="obj bird" id="bird3"></div>
+            <div class="align k-align right-align" id="k-fst-list">
+                <h2>바다가 보이는 마을</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align k-align left-align" id="k-snd-list">
+                <h2>맑은 날에</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align k-align right-align" id="k-thrd-list">
+                <h2>The Bakers Assistant</h2>
+                <p>Carl Orrje</p>
+            </div>
+        </div>
+
+        <div class="sen" background="url(https://www.ghibli.jp/gallery/chihiro014.jpg)">
+            <div id="sen-line"></div>
+            <div id="sen-hover1" class="song-link" link="spirit away.html?album=5&song=0"></div>
+            <div id="sen-hover2" class="song-link" link="spirit away.html?album=5&song=1"></div>
+            <div id="sen-hover3" class="song-link" link="spirit away.html?album=5&song=2"></div>
+            <div id="sen-hover4" class="song-link" link="spirit away.html?album=5&song=3"></div>
+            <div class="dust" id="dust1"></div>
+            <div class="dust" id="dust2"></div>
+            <div class="dust" id="dust3"></div>
+            <div class="dust" id="dust4"></div>
+            <div class="align sen-align right-align" id="sen-fst-list">
+                <h2>Always With Me</h2>
+                <p>Carl Orrje</p>
+            </div>
+            <div class="align sen-align right-align" id="sen-snd-list">
+                <h2>어느 여름날</h2>
+                <p>FermaTa</p>
+            </div>
+            <div class="align sen-align left-align" id="sen-thrd-list">
+                <h2>The Dragon Boy</h2>
+                <p>Various Artists</p>
+            </div>
+            <div class="align sen-align right-align" id="sen-fth-list">
+                <h2>The Sixth Station</h2>
+                <p>Various Artists</p>
+            </div>
+        </div>
+
+        <div class="phonyo" background="url(https://www.ghibli.jp/gallery/ponyo024.jpg)">
+            <div id="phonyo-line"></div>
+            <div id="phonyo-hover1" class="song-link" link="ponyo.html?album=6&song=0"></div>
+            <div id="phonyo-hover2" class="song-link" link="ponyo.html?album=6&song=1"></div>
+            <div id="phonyo-hover3" class="song-link" link="ponyo.html?album=6&song=2"></div>
+            <div class="sis" id="sis1"></div>
+            <div class="sis" id="sis2"></div>
+            <div class="sis" id="sis3"></div>
+            <div class="align p-align left-align" id="p-fst-list">
+                <h2>Deep Sea Ranch</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align p-align left-align" id="p-snd-list">
+                <h2>Mother Sea</h2>
+                <p>Fujikata Aki</p>
+            </div>
+            <div class="align p-align right-align" id="p-thrd-list">
+                <h2>벼랑 위의 포뇨</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+        </div>
+
+        <div class="redpig" background="url(https://www.ghibli.jp/gallery/porco005.jpg)">
+            <div id="redpig-line"></div>
+            <div id="redpig-hover1" class="song-link" link="porco rosso.html?album=7&song=0"></div>
+            <div id="redpig-hover2" class="song-link" link="porco rosso.html?album=7&song=1"></div>
+            <div id="redpig-hover3" class="song-link" link="porco rosso.html?album=7&song=2"></div>
+            <div id="redpig-hover4" class="song-link" link="porco rosso.html?album=7&song=3"></div>
+            <div class="child" id="child1"></div>
+            <div class="child" id="child2"></div>
+            <div class="child" id="child3"></div>
+            <div class="child" id="child4"></div>
+            <div class="align r-align right-align" id="r-fst-list">
+                <h2>The Bygone Days</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align r-align left-align" id="r-snd-list">
+                <h2>MADNESS</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align r-align left-align" id="r-thrd-list">
+                <h2>The Theme of Marco and Gina</h2>
+                <p>Fujikata Aki</p>
+            </div>
+            <div class="align r-align left-align" id="r-fth-list">
+                <h2>때로는 옛 이야기를</h2>
+                <p>Carl Orrje</p>
+            </div>
+        </div>
+
+        <div class="laphuta" background="url(https://i.postimg.cc/yY9Dm5L1/1-25x.png)">
+            <div id="laphuta-line"></div>
+            <div id="laphuta-hover1" class="song-link" link="laputa.html?album=8&song=0"></div>
+            <div id="laphuta-hover2" class="song-link" link="laputa.html?album=8&song=1"></div>
+            <div id="laphuta-hover3" class="song-link" link="laputa.html?album=8&song=2"></div>
+            <div id="laphuta-hover4" class="song-link" link="laputa.html?album=8&song=3"></div>
+            <div class="dove" id="dove1"></div>
+            <div class="dove" id="dove2"></div>
+            <div class="dove" id="dove3"></div>
+            <div class="dove" id="dove4"></div>
+            <div class="align la-align left-align" id="la-fst-list">
+                <h2>Carrying You</h2>
+                <p>Carl Orrje</p>
+            </div>
+            <div class="align la-align right-align" id="la-snd-list">
+                <h2>Attack</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align la-align left-align" id="la-thrd-list">
+                <h2>The Eternal Tree of Life</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+            <div class="align la-align left-align" id="la-fth-list">
+                <h2>하늘에서 떨어진 소녀</h2>
+                <p>Hisaishi Joe</p>
+            </div>
+        </div>
+
+        <div class="favor" background="url(https://www.ghibli.jp/gallery/baron005.jpg)">
+            <div id="favor-line"></div>
+            <div id="favor-hover1" class="song-link" link="the cat returns.html?album=9&song=0"></div>
+            <div id="favor-hover2" class="song-link" link="the cat returns.html?album=9&song=1"></div>
+            <div id="favor-hover3" class="song-link" link="the cat returns.html?album=9&song=2"></div>
+            <div id="favor-hover4" class="song-link" link="the cat returns.html?album=9&song=3"></div>
+            <div class="cat" id="cat1"></div>
+            <div class="cat" id="cat2"></div>
+            <div class="cat" id="cat3"></div>
+            <div class="cat" id="cat4"></div>
+            <div class="align f-align left-align" id="f-fst-list">
+                <h2>Kaze ni Naru</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align f-align left-align" id="f-snd-list">
+                <h2>Song of the Baron</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align f-align right-align" id="f-thrd-list">
+                <h2>At the Crossroads</h2>
+                <p>Cecile Corbel</p>
+            </div>
+            <div class="align f-align right-align" id="f-fth-list">
+                <h2>Waltz Katzen Blut</h2>
+                <p>Cecile Corbel</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Script 파일 로드 -->
+
+    <script src="js/songlist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Player</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a2222ddc57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/player.css">
+</head>
+
+<body>
+    <div class="dark"></div>
+    <div id="layer">
+        <header>
+            <a href="index.html" class="smallt">
+                <img src="images/totoro.png" alt="">
+            </a>
+            <a href="#" class="menu_icon">
+                <div class="menu-bar menu-bar1"></div>
+                <div class="menu-bar menu-bar2"></div>
+                <div class="menu3">
+                    <div class="menu-bar menu-bar3"></div>
+                    <i class="fas fa-play"></i>
+                </div>
+            </a>
+        </header>
+        <h1>Kiki's Delivery Service</h1>
+
+        <div class="circle_1">
+        </div>
+
+        <div class="circle_2">
+        </div>
+
+        <div class="circle_3">
+        </div>
+
+        <!-- 음악 메뉴 리스트 부분
+        <div class="menu_icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+
+        <!-- List 부분 -->
+        <div class="menu">
+            <div class="title">
+                <h1>Playlist</h1>
+                <div class="x"><img src="images/x.png" alt=""></div>
+            </div>
+            <div id="music_list"></div>
+        </div>
+
+        <!-- List에 들어갈 예시 아이템 -->
+        <div id="example_item" class="item">
+            <div class="item-img" style="display: none;"></div>
+            <div class="item-title"></div>
+
+            <!-- 오디오 부분의 구조는 변경시 클래스 이름 주의할 것 -->
+            <audio class="item-audio">
+                <source type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="player">
+            <div class="player-img"></div>
+            <div class="player-title"></div>
+            <div class="player-progress" style="display:none">
+                <div></div>
+            </div>
+            <div class="play-switch">
+                <button id="prev"><i class="fas fa-step-backward"></i></button>
+                <button id="pause"><i class="icon fas fa-pause"></i></button>
+                <button id="next"><i class="fas fa-step-forward"></i></button>
+            </div>
+        </div>
+
+        <footer>
+            <p>ⓒ 2021. <span>Ghibli Player</span> all rights reserved.</p>
+            <div class="right">
+                <div class="sns">
+                    <a src="#">Instagram</a>
+                    <a src="#">Facebook</a>
+                    <a src="#">Twitter</a>
+                </div>
+                <p>Typecase Korea by Commercial type</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js//song5.js"></script>
+</body>
+
+</html>

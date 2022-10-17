@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+}
+
+#layer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 61.458vw;
+    position: relative;
+    padding: 0 2.083vw;
+    background-size: 100% 100%;
+    overflow: hidden;
+
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 헤더 부분 */
+header {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 8;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+header .smallt img {
+    width: 2.708vw;
+}
+
+#layer h1 {
+    font-weight: 400;
+    font-size: 1.875vw;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    /* margin-top: 14vh; */
+    text-align: center;
+    z-index: 8;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.circle_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #000;
+    background-size: 100% 100%;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.circle_1:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.circle_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.circle_2:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.circle_3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.circle_3:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+#player {
+    color: #fff;
+    font-family: 'Dancing Script';
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    transition:all 0.3s ease-in-out;
+}
+
+#player .player-title {
+    font-size: 2.708vw;
+    font-weight: 700;
+    width: 25vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-switch {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 3.125vw;
+
+}
+
+#pause {
+    border-radius: 50%;
+    width: 3.542vw;
+    height: 3.542vw;
+    border: none;
+    font-size: 1.667vw;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+#pause:hover {
+    color: #fff;
+    background-color: #383838;
+}
+
+#prev,
+#next {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.667vw;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+#next:hover {
+    color: #383838;
+}
+
+#prev:hover {
+    color: #383838;
+}
+
+/* 메뉴 음악 아이콘 부분 */
+.menu_icon {
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-bar{
+    background-color: #fff;
+}
+
+.menu-bar1 {
+    width: 22px;
+    height: 2.4px;;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-right: auto;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-bar2 {
+    width: 22px;
+    height: 2.4px;;
+    border-radius: 2px;
+    margin-left: auto;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.menu3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    position: relative;
+}
+
+.menu-bar3 {
+    width: 16px;
+    height: 2.4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.menu3 > i {
+    position: absolute;
+    color: white;
+    font-size: 0.3px;
+    right: 0;
+    margin-left: auto;
+
+    transition: all 0.2s ease-in-out;
+}
+
+/* 푸터 부분 */
+
+footer {
+    height: 4.167vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.625vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin-top: auto;
+    z-index: 10;
+    flex-wrap: wrap;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+footer p {
+    color: rgba(225, 225, 225, 0.8);
+}
+
+footer p span {
+    color: #fff;
+    font-weight: 700;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 2.083vw;
+}
+
+.sns {
+    display: flex;
+    gap: 0.625vw;
+    color: #fff;
+}
+
+.dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* 음악 리스트 부분 */
+
+.menu {
+    background-color: #242424;
+    width: 24.896vw;
+    height: 100vh;
+    z-index: 70;
+    left: 100vw;
+    position: absolute;
+    padding: 2.083vw 2.083vw;
+    display: block;
+}
+
+.menu .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+
+.menu .title h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-weight: 400;
+    font-size: 2.083vw;
+}
+
+.menu .x {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#music_list {
+    color: #fff;
+    line-height: 2.917vw;
+    font-size: 1.042vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+
+#pause > .fa-play{
+    display: none;
+}
+
+#pause > .fa-play{
+    display: none;
+    border-radius: 50%;
+    width: 3.542vw;
+    height: 3.542vw;
+    border: none;
+    font-size: 1.667vw;
+    line-height: 3.542vw;
+    margin-left: 4px;
+}
+
+#pause > .fa-pause{
+    display: inline;
+    border-radius: 50%;
+    width: 3.542vw;
+    height: 3.542vw;
+    border: none;
+    font-size: 1.667vw;
+    line-height: 3.542vw;
+}
+
+.play-item{
+    transition: all 0.5s ease-in-out;
+}
+
+.playpause{
+    width: 2vw;
+    height: 2vw;
+    background-image: url('https://i.postimg.cc/fyqzq07J/Frame-18.png');
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s ease;
+}
+
+.play-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;    
+}
